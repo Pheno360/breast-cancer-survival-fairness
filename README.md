@@ -29,14 +29,6 @@ Fairness assessment
 Decision-threshold analysis
 Subgroup threshold tuning
 
-Repository Contents
-├── thesis/          # MSc thesis
-├── notebooks/       # Analysis and experiments
-├── src/             # Supporting code
-├── results/         # Figures and results
-├── README.md
-└── requirements.txt
-
 Research Context
 This project examines how differences in model predictions across age groups can be identified and investigated within breast cancer survival prediction. It explores whether adjusting decision thresholds at the subgroup level can reduce observed disparities while maintaining useful predictive performance.
 Research area: Clinical AI · Machine Learning · Algorithmic Fairness · Explainable & Human-Centered AI
