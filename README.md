@@ -1,8 +1,9 @@
-# Breast Cancer Survival Prediction & Fairness
+# Evaluating and Mitigating Age Bias in Breast Cancer Survival Prediction Using Subgroup Threshold Tuning
 
 Overview
-This repository contains the research work for an MSc Data Analytics thesis investigating age-related bias in machine learning–based breast cancer survival prediction. The study evaluates predictive performance and fairness across different age groups and explores subgroup threshold tuning as an approach to mitigate disparities in model outcomes.
-The project focuses on the intersection of clinical AI, machine learning, algorithmic fairness, and subgroup-based model evaluation, using the METABRIC dataset and multiple machine learning models.
+This project investigates age-related bias and predictive fairness in five-year breast cancer survival prediction using the METABRIC dataset. It compares three machine learning models—Logistic Regression, Random Forest, and XGBoost—using predictive performance metrics and fairness measures across young, middle-aged, and older patient groups.
+The study explores whether adjusting the global decision threshold can balance predictive performance and fairness across age groups. XGBoost achieved the highest ROC-AUC of 0.7322. Lowering its threshold from 0.50 to 0.40 increased recall from 94.30% to 97.99% and reduced the observed demographic parity and equalised odds disparities. However, false positives also increased, and bootstrap confidence intervals did not establish a conclusive fairness improvement. The findings highlight the trade-offs between predictive performance, fairness, and potential clinical risks when applying machine learning to healthcare.
+
 Research Focus
 
 Breast cancer survival prediction
@@ -29,6 +30,3 @@ Fairness assessment
 Decision-threshold analysis
 Subgroup threshold tuning
 
-Research Context
-This project examines how differences in model predictions across age groups can be identified and investigated within breast cancer survival prediction. It explores whether adjusting decision thresholds at the subgroup level can reduce observed disparities while maintaining useful predictive performance.
-Research area: Clinical AI · Machine Learning · Algorithmic Fairness · Explainable & Human-Centered AI
